@@ -1,0 +1,82 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 14, 2024, 7:11:27 PM
+    Author     : Trung
+*/
+
+.filter {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product__image {
+    width: 100%;
+}
+
+.product__image img {
+    width: 100%;
+    aspect-ratio: 1 / 1;  /* defining the aspect ratio of the image */
+    object-fit: cover;    /* making sure the image isn't distorted */
+    border-radius: 5px;
+}
+
+.product__name {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.product__price {
+    font-size: 1.1rem;
+    color: #28a745;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.product__detail {
+    margin-top: 16px
+}
+
+.page-link {
+    color: #000
+}
+
+.search-name-box {
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.page-item:hover a.page-link {
+    background-color: #000;
+    color: #fff;
+}
